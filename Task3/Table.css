@@ -1,0 +1,28 @@
+table{
+    text-align: left;
+    font-size: 15px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    border-color: aqua;
+}
+th{
+    text-align: center;
+    border: 2px solid;
+    font-size: 18px;
+    border-color: black;
+    color: #ffff;
+    background-color: rgb(132, 65, 194);
+}
+tr td{
+    border-collapse: collapse;
+    border: 2px solid black;
+    background-color: white;
+    border-color: black;
+}
+caption{
+    text-align: center;
+    text-decoration: dashed;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
