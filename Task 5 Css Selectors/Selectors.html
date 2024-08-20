@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="Selectors.css">
+    <style>
+        .int{
+            text-align: center;
+            background-color: brown;
+            color: aliceblue;
+            font-size: 25px;
+            font-weight: 400;
+            font-style: oblique;
+        }
+        .unique{
+            text-align: center;
+            background-color: darkgreen;
+            color: aliceblue;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        #unique{
+            text-align: right;
+            color: beige;
+            background-color: violet;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .grouping h3 ,h4{
+            color: rgb(111, 16, 236);
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: left; color: beige; background-color: black; font-size: 20px; font-weight: 300;" >Inline CSS</h1>
+    <h1 class="int">Internal CSS</h1>
+    <h2>External CSS</h2>
+
+
+    <div>
+        <h3 id="unique">Selector: selects the HTML element you want to style</h3>
+        <h3 class="unique">Simple selectors: name, id, class, elements </h3> 
+        <h3 class="unique">Combinator selectors : specific relationship between them</h3>
+        <h3 class="unique">Pseudo-class selectors :</h3> 
+        <h3 class="unique">Pseudo-elements selectors:</h3>
+        <h3 class="unique">Attribute selectors</h3>
+    </div>
+    <div class="grouping">
+        <h3>Hi </h2>
+        <h3>These are the three</h3>
+        <h4>grouping Elements</h4>
+    </div>
+   
+    
+</body>
+</html>
