@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        header{
+            background-color: darkcyan;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 23px;
+            font-weight: 700;
+        }
+        nav{
+            float: left;
+            padding: 20px;
+            width: 20%;
+            height: 629px;
+            background-color: darkseagreen;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 17px;
+        }
+        article{
+            background-color: darkgray;
+            float: left;
+            width: 80%;
+            height: auto;
+            padding: 20px;
+
+        }
+        section::after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        footer{
+            padding-top: 20px;
+            padding-bottom: 15px;
+            background-color: darkgreen;
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>HTML LAYOUT</h1>
+    <header>
+        Daily Planet
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="#">India</a></li>
+            <li> <a href="#">USA</a></li>
+            <li> <a href="#">UK</a></li>
+            <li> <a href="#">China</a></li>
+            <li> <a href="#">England</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section>
+            <h4>World News: </h4>
+            <p>"Global Climate Pact Signed: Nations Commit to New Emission Reduction Targets"
+            Leaders from over 150 countries have agreed on a landmark climate deal to reduce greenhouse gas emissions and combat climate change. The new pact includes binding targets for reducing carbon footprints and investing in renewable energy.</p>
+            
+            <h4>National News:</h4>
+            <p>"New Education Reform Bill Passes: What It Means for Schools and Students"
+            The recently passed education reform bill aims to overhaul the current education system, introducing new standards for curriculum, teacher evaluations, and funding. The bill is expected to impact public and private schools nationwide.</p>
+            
+            <h4>Local News:</h4>
+            <p>"City Council Approves New Public Park: What to Expect in Your Neighborhood"
+            The city council has approved plans for a new public park in downtown. The park will feature walking trails, playgrounds, and community gardens, aiming to provide more green space and recreational areas for residents.</p>
+            
+            <h4>Business:</h4>
+           <p>"Tech Giant Announces Major Expansion: New Headquarters to Create Thousands of Jobs"
+            A leading technology company has announced plans to build a new headquarters in the region, promising to create thousands of new jobs. The expansion is expected to boost the local economy and attract more tech startups.</p> 
+            
+            <h4>Entertainment:</h4>
+            <p>"Film Festival Highlights: Top Picks for This Year’s Must-See Movies"
+            The annual film festival is showcasing a diverse lineup of films from around the world. Here’s a rundown of the top picks and most anticipated movies, along with interviews from some of the festival’s standout directors and actors.</p></section>
+    </article>
+    <footer>
+        Article by Daily Planet
+    </footer>
+</body>
+</html>
