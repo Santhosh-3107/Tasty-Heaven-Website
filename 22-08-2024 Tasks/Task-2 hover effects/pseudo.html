@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo class</title>
+    <style>
+        body{
+            background-color: rgb(90, 172, 172);
+        }
+        h1{
+            text-align: left;
+            font-style:oblique;
+            font-weight: 800;
+            color: whitesmoke;
+            padding: 15px;
+        }
+        h1::first-letter{
+            color: lightcoral;
+        }
+        div{
+            padding: 20px;
+            display: flex;
+            text-align: center;
+        }
+        div ul li{
+            text-decoration: none;
+            list-style-type: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+       
+        }
+        li:hover{
+            color: rgb(10, 72, 122);
+            text-decoration: none;
+            transition: text-decoration 0.2s ;
+        }
+        li:hover:hover{
+            text-decoration: underline;
+        }
+        p{
+            display: none;
+            background-color: black;
+            padding: 20px;
+            color: white;
+
+        }
+        div:hover{
+            display: block;
+
+        }
+        h3{
+            text-align: center;
+            
+            border-radius: 30px;
+        }
+        h3:hover{
+            color: aliceblue;
+            transition: text-decoration 0.3s ease;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>menu</li>
+            <li>Service</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <h3>Hover Effect <br>Tap Me</h3>
+
+    
+</body>
+</html>

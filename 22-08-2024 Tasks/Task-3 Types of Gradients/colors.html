@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Gradient</title>
+    
+    <style>
+        h2{
+            text-align: left;
+            font-style: oblique;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div{
+            height: 200px;
+            width: 250px;
+        }
+        #lg{
+            background-image: linear-gradient(orange , white , green); 
+        }
+        #rg{
+            background-image: repeating-radial-gradient( yellow 10%, pink 20% , skyblue 30%);
+            }
+        .cg{
+            background-image: repeating-conic-gradient(rgb(182, 37, 201) 30deg , rgb(219, 25, 25) 60deg ,lime 90deg); 
+            border-radius: 450px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Linear Gradient</h2>
+    <div id="lg"></div>
+    <h2>Radical Gradient</h2>
+    <div id="rg"></div>
+    <h2>Conic Gradient</h2>
+    <div class="cg"></div>
+
+    
+</body>
+</html>
