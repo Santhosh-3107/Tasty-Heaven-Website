@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+nav{
+    display: flex;
+    background-color: rgb(37, 33, 33);
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.logo{
+    margin-left: 20px;
+    padding-tOP: 20PX;
+    
+    
+}
+.logo h1{
+    color: orangered;
+    font-weight: bold;
+    font-size: 50px;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    margin: 30px;
+    padding-left: 20px;
+    align-items:last baseline;
+}
+a{
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 20PX;
+}
+a::after{
+    content: " ";
+    position: absolute;
+    color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover{
+    color: orangered;
+}
+a:hover::after{
+    width: 100%;
+}
+.home{
+    color: orangered;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.join{
+    float: right;
+    margin-top: 70px;
+    margin-left: 90px;
+    padding-left: 50px;
+    align-items:last baseline;
+}
+.js{
+    text-align: center;
+    background-color: orangered;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.js:hover{
+    background-color: white;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.js, .cs {
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: orangered;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.js:hover, .cs:hover {
+    background-color: lightcoral;
+    color: white;
+}
