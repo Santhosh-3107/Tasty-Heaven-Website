@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click">Click me</button>
+    <input type="text" id="textInput" placeholder="Type something...">
+    <form id="myForm">
+        <input type="text" name="name" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+
+    <script>
+
+        function handleButtonClicks() {
+            document.getElementById('output').textContent = 'Button was clicked!';
+        }
+
+        function handleInputChange(event) {
+            document.getElementById('output').textContent = `You typed: ${event.target.value}`;
+        }
+        function handleFormSubmit(event) {
+            event.preventDefault(); 
+            const name = event.target.name.value;
+            document.getElementById('output').textContent = `Form submitted with name: ${name}`;
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('click').addEventListener('click', handleButtonClicks);
+            document.getElementById('textInput').addEventListener('input', handleInputChange);
+            document.getElementById('myForm').addEventListener('submit', handleFormSubmit);
+        });
+    </script>
+</body>
+</html>
